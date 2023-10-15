@@ -12,12 +12,15 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SigninIndexComponent } from './features/sign-in/signin-index/signin-index.component';
-
+import { SigninAddressComponent } from './features/sign-in/signin-address/signin-address.component';
+import { SinginPersonalComponent } from './features/sign-in/singin-personal/singin-personal.component';
 @NgModule({
   declarations: [
     AppComponent,
     SigninTypeComponent,
-    SigninIndexComponent
+    SigninIndexComponent,
+    SigninAddressComponent,
+    SinginPersonalComponent
   ],
   imports: [
     BrowserModule,

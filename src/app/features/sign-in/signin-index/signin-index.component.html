@@ -1,1 +1,18 @@
-<app-signin-type></app-signin-type>
+<ng-container [formGroup]="form">
+    <app-signin-type 
+        formGroupName="tipoPessoa">
+    </app-signin-type>
+
+    <app-singin-personal 
+        [propsInput]="propsOutput"
+        formGroupName="dadosBasicos">
+    </app-singin-personal>
+
+    <app-signin-address></app-signin-address>
+
+    <div><button [disabled]="form.invalid">Enviar</button></div>
+
+    {{form.value | json}}
+</ng-container>
+
+

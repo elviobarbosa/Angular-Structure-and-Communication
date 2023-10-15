@@ -1,0 +1,16 @@
+<h2>Dados básicos</h2>
+<div [formGroup]="form">
+    <div [hidden]="pessoaFisica">
+        <mat-form-field>
+            <mat-label>CPF</mat-label>
+            <input matInput placeholder="CPF" formControlName="CPF">
+        </mat-form-field>
+    </div>
+
+    <div [hidden]="pessoaJuridica">
+        <mat-form-field>
+            <mat-label>CNPJ</mat-label>
+            <input matInput placeholder="CNPJ" formControlName="CNPJ">
+        </mat-form-field>
+    </div>
+</div>
